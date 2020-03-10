@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/html">
+<body onload= "loadGifts()">
+<style>
+    .gifts
+    {
+        position: absolute;
+        top: 155px;
+        left: 30px;
+        width: 100px;
+        height: 200px;
+        overflow: scroll;
+        font-size: 25px;
+    }
+
+    body
+    {
+        background-image: url("kartka.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+
+<div class="gifts" id="gifts">
+</div>
+
+<img id="photoForSanta" src="" alt="No Photo" style ="
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    width: 75px;
+    height: 75px;
+    align: right;
+">
+
+<script type="text/javascript">
+function loadGifts()
+{
+    document.getElementById("gifts").innerText = activity.loadGifts();
+    document.getElementById("gifts").style.overflow = "auto";
+    loadPhoto();
+}
+
+function loadPhoto()
+{
+    var pho = document.getElementById("photoForSanta");
+    pho.src = activity.loadPhoto();
+}
+
+</script>
+
+</body>
+</html>
