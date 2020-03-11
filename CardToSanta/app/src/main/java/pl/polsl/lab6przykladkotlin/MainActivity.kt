@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         }
         catch(XD: ActivityNotFoundException){
             Toast.makeText(applicationContext,
-                "What did you say, lil punk?",
+                "What did you say?",
                 Toast.LENGTH_SHORT).show()
         }
     }
